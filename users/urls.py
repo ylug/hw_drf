@@ -5,8 +5,8 @@ from users.views import PaymentListView, UserUpdateView, UserDetailView
 
 app_name = UsersConfig.name
 
-# router = DefaultRouter()
-# router.register(r'user', UserViewSet, basename='user')
+#router = DefaultRouter()
+#router.register(r'user', UserViewSet, basename='user')
 
 urlpatterns = [
                   path('user/<int:pk>/update/', UserUpdateView.as_view(), name='user_update'),

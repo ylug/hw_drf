@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=255, verbose_name='Название')),
-                ('preview', models.ImageField(blank=True, null=True, upload_to='materials/', verbose_name='Превью')),
+                ('preview', models.ImageField(blank=True, null=True, upload_to='vehicle/', verbose_name='Превью')),
                 ('description', models.TextField(verbose_name='Описание')),
             ],
             options={
@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=255, verbose_name='Название')),
-                ('preview', models.ImageField(blank=True, null=True, upload_to='materials/', verbose_name='Превью')),
+                ('preview', models.ImageField(blank=True, null=True, upload_to='vehicle/', verbose_name='Превью')),
                 ('description', models.TextField(verbose_name='Описание')),
                 ('url', models.URLField(blank=True, null=True, verbose_name='Ссылка на видео')),
                 ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='course', to='vehicle.course', verbose_name='Курс')),

@@ -5,6 +5,11 @@ from vehicle.models import Course, Lesson
 from services import NULLABLE
 
 
+class UserRoles(models.TextChoices):
+    MEMBER = 'member'
+    MODERATOR = 'moderator'
+
+
 class User(AbstractUser):
     username = None
     email = models.EmailField(unique=True, verbose_name='Почта')
